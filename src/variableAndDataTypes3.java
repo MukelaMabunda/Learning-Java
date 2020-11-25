@@ -1,7 +1,7 @@
 
 public class variableAndDataTypes3
 {
-	public String instantVar = "instant Var";
+	public String instantVar = "Instant Var";
 	
 	public void demoFunction()
 	{
