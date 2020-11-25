@@ -1,9 +1,11 @@
 
-public class variable1 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class variable1 
+{
+	public static void main(String[] args) 
+	{
+		int a = 10;
+		int b = 10;
+		int c = a+b;
+		System.out.println(c);
 	}
-
 }
