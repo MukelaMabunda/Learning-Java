@@ -1,3 +1,5 @@
+import java.util.Scanner;
+import static java.lang.System.out;
 
 public class controlledStatements
 {
@@ -18,18 +20,48 @@ public class controlledStatements
 	 * 10); print(result); test(5, 5); print(result); }
 	 */
 
-	static boolean condition()
-	{
-		boolean result = Math.random() < 0.99;
-		System.out.print(result + ", ");
-		return result;
-	}
+	/*
+	 * static boolean condition() { boolean result = Math.random() < 0.99;
+	 * System.out.print(result + ", "); return result; }
+	 * 
+	 * public static void main(String[] args) { while (condition())
+	 * System.out.println("Inside ‘while’");
+	 * 
+	 * System.out.println("Exited ‘while’"); }
+	 */
 
-	public static void main(String[] args)
+	public static void main(String args[])
 	{
-		while (condition())
-			System.out.println("Inside ‘while’");
-		
-		System.out.println("Exited ‘while’");
+		try (Scanner myScanner = new Scanner(System.in))
+		{
+			int hankees, socks;
+			out.print("Hankees and Socks scores?");
+			hankees = myScanner.nextInt();
+			socks = myScanner.nextInt();
+			out.println();
+			if (hankees > socks)
+			{
+				out.println("Hankees win...");
+				out.print("Hankees: ");
+				out.println(hankees);
+				out.print("Socks: ");
+				out.println(socks);
+			} else if (socks > hankees)
+			{
+				out.println("Socks win...");
+				out.print("Socks: ");
+				out.println(socks);
+				out.print("Hankees: ");
+				out.println(hankees);
+
+			} else
+			{
+				out.println("It's a tie...");
+				out.print("Hankees: ");
+				out.println(hankees);
+				out.print("Socks: ");
+				out.println(socks);
+			}
+		}
 	}
 }
