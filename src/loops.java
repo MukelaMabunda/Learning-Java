@@ -18,5 +18,10 @@ public class loops
 			System.out.println(" a : " + a);
 			a++;
 		} while (a < 10);
+
+		for (a = 10; a < 20; a += 1)
+		{
+			System.out.println("value of a : " + a);
+		}
 	}
 }
