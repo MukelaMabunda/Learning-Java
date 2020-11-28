@@ -23,5 +23,21 @@ public class loops
 		{
 			System.out.println("value of a : " + a);
 		}
+
+		int[] array = { 10, 20, 30, 40, 50 };
+		for (int b : array)
+		{
+			System.out.print(b);
+			System.out.print(",");
+		}
+		
+		System.out.print("\n");
+		
+		String[] list = { "Fayaz", "Khan", "joy", "jeff" };
+		for (String li : list)
+		{
+			System.out.print(li);
+			System.out.print(",");
+		}
 	}
 }
